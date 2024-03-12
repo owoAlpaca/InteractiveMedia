@@ -1,0 +1,84 @@
+body{
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto 180px auto;
+    cursor: url(IMG/cursor.png), auto;
+}
+
+#SectionL{
+    display: flex;
+    justify-content: left;
+}
+
+#SectionR{
+    display: flex;
+    justify-content: right;
+}
+
+#SectionM{
+    background-color: white;
+}
+
+.WeekBox{
+    display: flex;
+    justify-content: center;
+}
+
+.WeekButton{
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-left: none;
+    border-right: none;
+    border-color: black;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    word-spacing: 0.1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.WeekButton:hover{
+    background-color: black;
+    color: White;
+    transform: translate(10px);
+}
+
+.WeekLine{
+    height: 50px;
+    border-left: 2px solid;
+    margin-left: 50%;
+}
+
+.HiddenContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 95%;
+    height: 128.5px;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: 28%;
+    background-color: black;
+    position: relative;
+}
+
+.circle::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 50px;
+    background-color: black;
+    transform: translate(100%, -50%) rotate(45deg);
+    top: -10px;
+    right: -10px;
+}
+
+.circle::before{
+
+}
