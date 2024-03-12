@@ -81,4 +81,5 @@ body{
 
 .circle::before{
     content: "";
+    position: absolute;
 }
